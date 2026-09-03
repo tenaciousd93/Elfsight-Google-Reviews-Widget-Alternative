@@ -41,7 +41,7 @@ function fetchReviews() {
                     name: json.result.name,
                     rating: json.result.rating,
                     user_ratings_total: json.result.user_ratings_total,
-                    url: json.result.url,
+                    url: `https://search.google.com/local/writereview?placeid=${PLACE_ID}`,
                     address: json.result.formatted_address,
                     reviews: json.result.reviews.map((review) => ({
                         author_name: review.author_name,
